@@ -23,13 +23,13 @@ const getAllTodos = async (req, res) => {
 // Add Todos Method
 const addTodos = async (req, res) => {
     try {
-        const respone = await Todos.create(req.body)
+        const response = await Todos.create(req.body)
 
         console.log(`New Todo Created ${req.body}`)
         res.status(200).json({
             status: true,
             message: "New Line Added in Todos",
-            data: null
+            data: response
         })
     } catch (error) {
         console.log(`Error While Adding Todo ${error}`)
