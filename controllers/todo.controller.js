@@ -1,5 +1,4 @@
 import Todos from "../models/todos.models.js";
-
 // Get All Todos Method
 const getAllTodos = async (req, res) => {
     try {
@@ -69,11 +68,9 @@ const getTodobyId = async (req, res) => {
             data: null
 
         })
-
     }
 }
 // Update Todos by ID
-
 const updateTodobyId = async (req, res) => {
     try {
         const { todoId } = req.params
